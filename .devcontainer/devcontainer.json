@@ -1,0 +1,17 @@
+{
+  "name": "FUSS Web Dev Environment",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "web",
+  "workspaceFolder": "/workspaces/FUSSwebsite",
+  "forwardPorts": [8080],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "ms-vscode.php-debug",
+        "cweijan.vscode-mysql-client2"
+      ]
+    }
+  },
+  "postCreateCommand": "chmod -R 777 /var/www/html"
+}
