@@ -69,3 +69,20 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 }
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register - FUSS</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form method="POST" action="">
+        <input type="text" name="name" placeholder="Full Name" required><br>
+        <input type="email" name="email" placeholder="Email" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <button type="submit">Register</button>
+    </form>
+    <p><?php echo htmlspecialchars($message); ?></p>
+    <p><a href="index.php">Back to Home</a></p>
+</body>
+</html>
